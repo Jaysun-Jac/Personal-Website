@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jason Jackson</title>
+    <link rel="stylesheet" href="styling.css">
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Top navbar initial hidden displayed for small screens-->
+    <div class="topnav">
+        <div class="logo">
+            <h2>Jason Jackson</h2>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/Jaysun-Jac"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jason-jackson-9b3a382b5/"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="what-I-Do.html">What I Do</a></li>
+            <li><a href="Resume.pdf">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contactMe.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="Temp Profile photo.jpg" alt="">
+                    <h2>Jason Jackson</h2>
+                </div>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About Me</a></li>
+                    <li><a href="what-I-Do.html">What I Do</a></li>
+                    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contactMe.html">Contact</a></li> 
+                </ul>
+                <div class="social">
+                    <a href="https://github.com/Jaysun-Jac"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jason-jackson-9b3a382b5/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="WID-content">
+                <h4>What I Do</h4>
+                <p>As of right now, I'm a undergraduate Computer Science student at the University of Houston. I'm actively looking for a internship for this coming summer(2025)</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        /*displaying topnavbar on small screen **/
+
+        let menuicon=document.querySelector(".menu-icon");
+        let navbar=document.querySelector(".navbar");
+        let icon=document.querySelector(".menu-icon i")
+
+        menuicon.addEventListener("click",function(){
+            navbar.classList.toggle("open");
+            if(icon.classList.contains("fa-bars"))
+        {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        }
+        else{
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+        })
+    </script>
+</body>
+</html>
